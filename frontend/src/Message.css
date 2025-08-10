@@ -1,0 +1,183 @@
+body {
+  background-color: #e9e8e7;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 980px;
+  background:white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 93vh;
+}
+.naam{
+    display: flex;
+    margin-left: 10px;
+}
+.topicon img{
+    height: 15px;
+    width: 15px;
+}
+.topicon{
+    display: flex;
+    gap: 20px;
+}
+.chat-header {
+  background: white;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/wallpaper.jpg");
+}
+.chat{
+    height: 15px;
+    width: 15px;
+    align-content: center;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.message {
+  max-width: 80%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.sent {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+.sent p{
+  margin: 5px;
+}
+.received {
+  background: #fff;
+  border: 1px solid #ddd;
+  align-self: flex-start;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.time {
+  font-size: 10px;
+  color: gray;
+  position: absolute;
+  bottom: 2px;
+  right: 6px;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-right: 5px;
+  background: #f0f0f0;
+}
+
+.chat-footer button {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+.back-btn img{
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+.back-btn{
+  border: 0px;
+    padding: 0px;
+    height: 20px;
+    width: 20px;
+}
+.naam{
+    display: flex;
+    margin-left: -90px;
+}
+.topicon img{
+    height: 20px;
+    width: 20px;
+}
+.topicon{
+    display: flex;
+    gap: 20px;
+}
+.chat-header {
+  background: white;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  /* text-align: center; */
+}
+.app {
+  width: 360px;
+  background:white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.app-container{
+   height: 100vh;
+}
+.chat-body {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/wallpaper.jpg");
+  background-size: cover;
+}
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-right: 5px;
+  background: #f0f0f0;
+}
+
+.chat-footer button {
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+}
